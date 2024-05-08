@@ -27,7 +27,7 @@ num,brewery,state,name,abv,style,desc,section
 26,Blackflag Brewery,QLD,Nitro Citrus - Blood Orange Chocolate Porter,6.5,Porter,"The Nitro Citrus Blood Orange Chocolate Porter reveals a deep ruby red colour with a dense head.
 We've ramped the Orange on this one, upon pouring, aromas of lush orange and chocolate burst out of the glass.
 It tastes of bright blood orange up front spun with chocolate on the back end. Low bitterness and soft full mouthfeel, adds to the richness.",2
-27,Urban Alley Brewery,VIC,Yu Zerious? - Yuzu Russ”,2.8,Fruit Beer ''Yuzu! (Japanese citrus fruit) Russ! (Hefeweizen Radler/Shandy) Yuzu Russ!'',,2
+27,Urban Alley Brewery,VIC,Yu Zerious? - Yuzu Russ”,2.8,Fruit Beer,Yuzu! (Japanese citrus fruit) Russ! (Hefeweizen Radler/Shandy) Yuzu Russ!,2
 28,Hop Hen Brewing,VIC,Dubbel Dutch,7.8,Belgian Dubbel,"This Belgium Dubbel is deep, dark and smooth. The Dutch sweet biscuit treat known as' Specuulas' is the inspiration for this beer and the use of selected spices throughout the boil add these delicious flavours. Stay in touch with the Dutch!!",2
 29,Bowden Brewing,SA,Soolong Sucka,6.5,American IPA,Combining new world hops with old world tea to create something both Nan and Dad will enjoy. Soothing aromas of Oolong and black tea complimented by subtle hints of raspberry and monk pear pair with new world hops to create a balanced but unique take on an American IPA. A refreshing and nuanced drinking experience for tea and beer lover alike.,2
 30,Captain Bligh's Brewery,TAS,Wise and the Foolish,5.8,Weizenbock,"This beer is only for the wise and the foolish. Based on a very old French/Belgium Gissete style, we have produced a dark version to suit late Autumn drinking. Malty, bready, caramel with hints of banana and spice. OOH LA LA!",2
@@ -65,7 +65,17 @@ This is a super crisp and dry saison, highly effervescent, with some spiciness f
 55,Noisy Minor,QLD,Angry Fish,8.0,Baltic Porter,"Big and roasty like a brown porter that's been paired with dark malts and fermentation like a Schwarzbier. Expect to feel the warmth, delicious dark berry flavours and an all-round bountiful beer with alcohol warmth to finish.",3
 56,Soapbox Beer,QLD,The Sanga,5.5,Experimental Beer,"The delicious Aussie interpretation of the classic American sanga, the PB & J. Every sanga needs a wheaty, whitebread base, a layer of peanut butter and lashings of purple jelly.",3
 57,Ramblers Ale Works,VIC,"Honey Honey, Joy Joy",6.5,Specialty Beer,"Your childhood kitchen on a rainy day: toasted flakes of corn starting to brown on the edges, aromatic honey beginning to caramelize. Honey joys! This brew is thick and chewy in body, bursts into gentle flavors of toasted corn and honey, and draws you in with that classic aroma capable of transporting you back in time.",3
-58,Slipstream Brewing Co.,QLD,Pick of the Bunch,5.5,"Specialty Beer ''A hazy golden brew that embodies the essence of a classic Banana Cream Pie. Fragrant ripe banana aromas intertwine with subtle notes of vanilla and coconut. With each sip, the beer reveals layers of flavour akin to the layers of the luscious and creamy pie. Velvety sweet banana takes centre stage on the palate, complemented by a gentle hint of vanilla reminiscent of custard filling. Undertones of toasted biscuit and coconut add depth, while the addition of lactose imparts a creamy texture replicating whipped cream. This beer offers a delightful balance of sweetness and richness, delivering a truly indulgent dessert experience in liquid form.''",,3
+58,Slipstream Brewing Co.,QLD,Pick of the Bunch,5.5,Specialty Beer,"A hazy golden brew that embodies the essence of a classic Banana Cream Pie. Fragrant ripe banana aromas intertwine with
+
+subtle notes of vanilla and coconut. With each sip, the beer reveals layers of flavour akin to the layers of the luscious and
+
+creamy pie. Velvety sweet banana takes centre stage on the palate, complemented by a gentle hint of vanilla reminiscent of
+
+custard filling. Undertones of toasted biscuit and coconut add depth, while the addition of lactose imparts a creamy texture
+
+replicating whipped cream. This beer offers a delightful balance of sweetness and richness, delivering a truly indulgent
+
+dessert experience in liquid form.",3
 59,The Mill Brewery,VIC,Black Forest Espresso,8.0,Pastry Stout,"Based off the famous 'Black Forest Tart' from Masterchef Dessert Masters, The Mill Brewery and Tarts Anon have teamed up to create this creamy smooth, coffee pastry stout. Expect decadent flavours of chocolate, coffee, vanilla and cherries.",3
 61,Good Land Brewing Co,VIC,The Cowboy Slickshake,8.5,Pastry Stout,"Step back into the wild wild west and sip on this crazy thic choc, butterscotch, milkybar shake like smoothie stout.
 Yeah, that's right.... smoothie stout!",4
