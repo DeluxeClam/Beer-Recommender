@@ -262,4 +262,4 @@ def reset_app(n_clicks):
     return (0, [], [], [], [], [1, 13])
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server(debug=False)
