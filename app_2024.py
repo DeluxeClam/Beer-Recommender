@@ -27,6 +27,7 @@ external_stylesheets = [
 ]
 
 app = Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 app.title = f"The GABS {gabs_year} Beer Recommender"
 
 # Helper functions
