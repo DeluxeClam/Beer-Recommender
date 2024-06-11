@@ -246,9 +246,11 @@ def update_app(n_clicks, number, section, state, style, abv, beer_map, recs):
         # Update rec table
         if data_manip.shape[0] == 1:
             num = data_manip['num'].iloc[0]
-            recs = get_recs(get_beer_ind(num), 5).to_dict('records')
+            recs = get_recs(get_beer_ind(num), 5)
+        else:
+            recs = data_beers.query("abv==100")
 
-    return data_manip.to_dict('records'), beer_map, recs
+    return data_manip.to_dict('records'), beer_map, recs.to_dict('records')
 
 @app.callback(
     Output(component_id="beer_button", component_property='n_clicks'),
