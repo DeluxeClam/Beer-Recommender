@@ -16,15 +16,7 @@ data_2d_embed = pd.read_csv(f"Data/GABS_{gabs_year}_embeddings.csv")
 data_similarity = pd.read_csv(f"Data/GABS_{gabs_year}_similarity_matrix.csv").set_index("num")
 
 # Import style
-external_stylesheets = [
-    {
-        "href": (
-            "https://fonts.googleapis.com/css2?"
-            "family=Lato:wght@400;700&display=swap"
-        ),
-        "rel": "stylesheet",
-    },
-]
+external_stylesheets=[dbc.themes.BOOTSTRAP]
 
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
@@ -47,14 +39,14 @@ app_desc = dcc.Markdown(id="app_desc",
                         )
 beer_data_table = dash_table.DataTable(id="beers_table",
                                        data=data_beers.to_dict('records'),
-                                       page_size=10,
+                                       page_size=12,
                                        fill_width=False,
                                        style_data={'whiteSpace': 'normal', 'height': 'auto'},
                                        style_cell={'maxWidth':'700px'}
                                        )
 beer_recs_table = dash_table.DataTable(id="recs_table",
                                        data=data_beers.query("abv==100").to_dict('records'),
-                                       page_size=10,
+                                       page_size=12,
                                        fill_width=False,
                                        style_data={'whiteSpace': 'normal', 'height': 'auto'},
                                        style_cell={'maxWidth':'700px'}
@@ -131,10 +123,10 @@ app.layout = html.Div(
             app_desc,
             html.Br(),
             dbc.Row([
-                dbc.Col(children=["Select number...", num_dropdown], width=1),
-                dbc.Col(children=["Select section...", section_dropdown], width=1),
-                dbc.Col(children=["Select state...", state_dropdown], width=1),
-                dbc.Col(children=["Select style...", style_dropdown], width=3),
+                dbc.Col(children=["Select number...", num_dropdown], width=2),
+                dbc.Col(children=["Select section...", section_dropdown], width=2),
+                dbc.Col(children=["Select state...", state_dropdown], width=2),
+                dbc.Col(children=["Select style...", style_dropdown], width=4),
                 dbc.Col(children=beer_button, width=1),
                 dbc.Col(children=reset_button, width=1),
             ]),
@@ -247,6 +239,8 @@ def update_app(n_clicks, number, section, state, style, abv, beer_map, recs):
         if data_manip.shape[0] == 1:
             num = data_manip['num'].iloc[0]
             recs = get_recs(get_beer_ind(num), 5)
+            recs['Similarity\nRank'] = [i+1 for i in range(5)]
+            recs = recs[['Similarity\nRank']+list(recs.drop(columns='Similarity\nRank').columns)]
         else:
             recs = data_beers.query("abv==100")
 
