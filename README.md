@@ -2,6 +2,8 @@
 
 Project to analyse the festival beers offered at GABS 2024.
 
+[Here is the link to the 2024 GABS dashboard.](https://beer-recommender.onrender.com/)
+
 ## Objectives
 
 The objectives of this project are:
